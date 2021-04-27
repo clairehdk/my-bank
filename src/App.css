@@ -53,8 +53,14 @@ body {
   margin-top: 50px;
 }
 
-.account > div:first-child {
+.blue {
   background-color: #1976d2;
+}
+.pink {
+  background-color: #c2185b;
+}
+
+.account > div:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,6 +76,7 @@ body {
 .account h2 {
   font-size: 25px;
   font-weight: 200;
+  letter-spacing: 3px;
 }
 
 .account > div:nth-child(2) {
@@ -90,6 +97,9 @@ body {
 .account .money div p:first-child {
   margin-right: 20px;
 }
+.account .money > p {
+  letter-spacing: 3px;
+}
 
 .account .money:nth-of-type(odd) {
   background-color: white;
@@ -108,4 +118,13 @@ body {
   margin-top: 10px;
   margin-left: 79%;
   color: gray;
+}
+
+@media (max-width: 1024px) {
+  .header > div {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
 }
