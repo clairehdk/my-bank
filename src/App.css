@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Montserrat;
+  background-color: #efefef;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Container  */
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header  */
+
+.header {
+  background-color: #273338;
+  color: white;
+  padding: 25px;
+}
+.header h2 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+.header img {
+  width: 100px;
+}
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1024px;
+  margin: 0 auto;
+}
+.header > div > div {
+  display: flex;
+  align-items: center;
+}
+.header .cercle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Account  */
+
+.account {
+  margin-top: 50px;
+}
+
+.account > div:first-child {
+  background-color: #1976d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.account h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.account h2 {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.account > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.account .money {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.account .money div {
+  display: flex;
+}
+.account .money div p:first-child {
+  margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.account .money:nth-of-type(odd) {
+  background-color: white;
+}
+
+.account .money:nth-of-type(even) {
+  background-color: #f7f7f7;
+}
+.account .money p:first-child {
+  color: gray;
+}
+.container button {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: none;
+  margin-top: 10px;
+  margin-left: 79%;
+  color: gray;
 }
